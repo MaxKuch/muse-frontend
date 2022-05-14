@@ -8,6 +8,7 @@ Muse - [Demo](https://muse0.herokuapp.com)
 
 **Stack:**
 
+* React
 * SCSS
 * Framer Motion
 * Axios
