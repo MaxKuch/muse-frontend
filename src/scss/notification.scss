@@ -1,0 +1,12 @@
+@import 'variables';
+
+.ant-notification-notice {
+    color: #fff;
+    background-color: lighten($contentBg, 3);
+    &-message {
+        color: #fff;
+    }
+    &-close, &-close:hover {
+        color: #fff;
+    }
+}

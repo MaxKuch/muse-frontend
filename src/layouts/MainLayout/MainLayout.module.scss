@@ -1,0 +1,36 @@
+@use '../../scss/variables';
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: variables.$contentBg;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 83px;
+}
+
+.content {
+    margin: 0 auto;
+    padding-top: 100px;
+    max-width: 800px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-grow: 1;
+    overflow: auto;
+    @media screen and (max-width: 600px) {
+        padding-top: 60px;
+    }
+}
+
+.player {
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: variables.$contentBg;
+    z-index: 1000;
+}

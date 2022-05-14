@@ -1,0 +1,36 @@
+@use '../../scss/variables';
+
+.header {
+    width: 100%;
+    padding: 20px 45px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    background-color: variables.$contentBg;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 600px) {
+        padding: 10px 25px;
+    }
+}
+
+.logo {
+    font-family: 'Poppins', 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.menuItem {
+    cursor: pointer;
+    color: #fff;
+    margin-left: 15px;
+    transition: all .2s ease;
+    &:hover {
+        color: variables.$accent;
+    }
+}

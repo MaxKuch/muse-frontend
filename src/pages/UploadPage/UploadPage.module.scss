@@ -1,0 +1,40 @@
+@use '../../scss/variables';
+
+.upload {
+    height: 100%;
+    padding-right: 10px;
+    :global {
+        .ant-steps-item-title {
+            font-size: 1.1rem;
+            color: #fff!important;
+        }
+        .ant-steps-icon {
+            color: #fff!important;
+        }
+        .ant-steps-item-finish .ant-steps-item-icon {
+            background-color: variables.$accent;
+            border-color: variables.$accent;
+            & > .ant-steps-icon {
+                color: #000!important;
+            }
+        }
+        .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon {
+            background: transparent;
+            border-color: variables.$accent;
+        }
+        .ant-steps-item-wait .ant-steps-item-icon {
+            background: transparent;
+            border-color: variables.$textGrey;
+            & > .ant-steps-icon {
+                color: variables.$textGrey!important;
+            }
+        }
+        .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after {
+            background-color: variables.$accent;
+        }
+    }
+    &Body {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}

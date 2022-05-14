@@ -1,0 +1,107 @@
+@use '../../scss/variables';
+
+.audioItem {
+    display: flex;
+    padding: 10px 20px;
+    background-color: variables.$mainBg;
+    border-radius: 5px;
+    $self: &;
+    @media screen and (max-width: 600px) {
+        padding: 10px 10px;
+    }
+    &Thumb {
+        cursor: pointer;
+        position: relative;
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        @media screen and (max-width: 600px) {
+            width: 60px;
+            height: 60px;
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            background-color: rgba(#000000, .5);
+            z-index: 100;
+        }
+        &:hover {
+            #{$self}PlayingAnimation {
+                display: none;
+            }
+            #{$self}PlayButton {
+                display: flex!important;
+            }
+        }
+    }
+    &Cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    &Info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Poppins', 'Source Sans Pro', sans-serif;
+        font-size: 1rem;
+        margin-left: 15px;  
+        h3 {
+            margin-bottom: 5px;
+        }
+        h3, h4 {
+            line-height: 1;
+        }
+    }
+    &Author, &Name {
+        font-size: 1.1rem;
+        font-weight: normal;
+        margin-top: 5px;
+        &:hover {
+            color: variables.$accent;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 1rem;
+        }
+    }
+    &Name {
+        color: #fff;
+    }
+    &Author{
+        color: variables.$textGrey;
+    }
+    &Extra {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+    &AddToFavorites {
+        margin-left: 20px;
+        @media screen and (max-width: 600px) {
+            margin-left: 10px;
+        }
+    }
+    &PlayButton, &PlayingAnimation {
+        position: relative;
+        z-index: 100;
+    }
+}
+
+
+.songTime{
+    font-size: 1rem;
+    color: rgba(#fff, .5)
+}
+

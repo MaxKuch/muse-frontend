@@ -1,0 +1,17 @@
+@use '../../scss/variables';
+
+.playButton {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: variables.$accent;
+    box-shadow: 0px 0px 9px variables.$accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.icon {
+    font-size: .7rem;
+}

@@ -1,0 +1,22 @@
+@import 'variables';
+
+.upload-dragger {
+    background-color: lighten($contentBg, 3)!important;
+    border-color: lighten($contentBg, 15)!important;
+    .ant-upload-text {
+        color: #fff!important;
+    }
+    & ~ .ant-upload-list {
+        color: #fff!important;
+        .ant-upload-list-item {
+            height: 35px;
+        }
+        .ant-upload-list-item:hover .ant-upload-list-item-info{
+            border-radius: 2px;
+            background-color: lighten($contentBg, 3)!important;
+        }
+        .ant-upload-list-item-card-actions .anticon, .ant-upload-list-item-info .ant-upload-text-icon .anticon {
+            color: rgba($color: #fff, $alpha: .7);
+        }
+    }
+}

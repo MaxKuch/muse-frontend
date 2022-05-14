@@ -1,0 +1,12 @@
+@import 'variables';
+
+.dropdown {
+    background-color: $contentBg;
+    .ant-dropdown-menu-item {
+        color: #fff;
+        font-size: 1rem;
+        &:hover {
+            background-color: darken($contentBg, 5);
+        }
+    }
+}

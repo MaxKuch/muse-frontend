@@ -1,0 +1,9 @@
+.emptyMessage {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.favoriteSongs {
+    overflow-y: auto;
+    height: calc(100% - 53px);
+}

@@ -1,0 +1,18 @@
+@import 'variables';
+
+.button {
+    color: #000;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    height: auto;
+    background-color: $accent!important;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 40px;
+    border-radius: 20px;
+    line-height: 1;
+    &:hover, &:focus  {
+        color: #000;
+        background-color: darken($accent, 5)!important;
+    }
+}

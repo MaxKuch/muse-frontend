@@ -1,0 +1,47 @@
+@use '../../scss/variables';
+
+.artist {
+    height: 100%;
+    overflow-x: clip;
+    padding-bottom: 30px;
+    &Header {
+        display: flex;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #333;
+        h1 {
+            font-family: 'Poppins', 'Source Sans Pro', sans-serif;
+            font-size: 3rem;
+        }
+        p {
+            color: variables.$textGrey;
+            font-size: 1.1rem;
+        } 
+    }
+    &Picture {
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 300px;
+            width: 100%;
+            flex-shrink: 0;
+        }
+    }
+    
+}
+
+
+.sectionTitle {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+}
+
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,25 @@
+@import 'variables';
+
+.form-item {
+    label {
+        font-size: 1.1rem;
+        color: #fff!important;
+    }
+    .ant-form-item-required::before{
+        display: none!important;
+    }
+}
+
+.input {
+    background-color: lighten($contentBg, 5)!important;
+    border-color: lighten($contentBg, 5);
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #fff;
+    &:hover {
+        border-color: $accent!important;
+    }
+    &[disabled] {
+        border-color: lighten($contentBg, 5);
+    }
+}

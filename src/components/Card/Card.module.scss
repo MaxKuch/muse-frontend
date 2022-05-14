@@ -1,0 +1,57 @@
+@use '../../scss/variables';
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: var(--size);
+    height: var(--size);
+    text-align: center;
+    padding: calc(var(--size) / 15);
+    background-size: cover;
+    background-position: center;
+    h4 {
+        position: relative;
+        font-family: 'Poppins', 'Source Sans Pro', sans-serif;
+        font-size: calc(var(--size) / 13);
+        margin-top: auto;
+        line-height: 1.1;
+    }
+    h5 {
+        position: relative;
+        color: darken(variables.$accent, 5) ;
+        font-size: calc(var(--size) / 14);
+    }
+    &Overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(#000000, .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .playIcon {
+        color: variables.$accent;
+        font-size: calc(var(--size) / 6);
+        position: relative;
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 70%;
+            background: variables.$accent;
+            filter: blur(10px);
+            opacity: .5;
+        }
+    }
+}
+

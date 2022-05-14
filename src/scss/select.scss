@@ -1,0 +1,42 @@
+@import 'variables';
+
+.select {
+    .ant-select-selector {
+        background-color: lighten($contentBg, 5)!important;
+        border-color: lighten($contentBg, 5)!important;
+        padding: 8px 5px;
+        font-size: 1rem;
+        color: #fff;
+        height: 40px!important;
+        &:hover {
+            border-color: $accent!important;
+        }
+    }
+    .ant-select-selection-placeholder {
+        padding-top: 4px!important;
+    }
+    .ant-select-selection-search-input {
+        height: 40px!important;
+    }
+    .ant-select-dropdown {
+        background-color: lighten($contentBg, 5)!important;
+        border-color: lighten($contentBg, 5)!important;
+    }
+    .ant-select-selection-item {
+        line-height: 40px!important;
+    }
+    &-option {
+        color: #fff!important;
+        font-size: 1rem!important;
+        &.ant-select-item-option-selected:not(.ant-select-item-option-disabled),  
+        &.ant-select-item-option-active:not(.ant-select-item-option-disabled),
+        &:hover{
+            background-color: lighten($contentBg, 10)!important;
+        }
+    }
+    .ant-select-clear {
+        background: transparent;
+        color: lighten($contentBg, 25);
+        font-size: .85rem;
+    }
+}
